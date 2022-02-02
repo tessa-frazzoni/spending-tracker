@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import Expenses from './components/Expenses';
-import Test from './components/Test'
 import NewExpense from './components/NewExpense/NewExpense';
 
 const DUMMY_EXPENSES = [
@@ -38,8 +37,6 @@ function App() {
     })
   }
 
-  const food = 'chicken'
-
 
   
   return (
@@ -47,9 +44,6 @@ function App() {
       <div>
         <NewExpense onAddExpense={addExpenseHandler} />
         <Expenses items={expenses} />
-      </div>
-      <div>
-        <Test item={food} />
       </div>
     </div>
   );
